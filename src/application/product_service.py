@@ -1,6 +1,6 @@
-from src.domain.repository import IProductRepository
-from src.domain.entities import Product
-from src.application.dtos import ProductDTO
+from ..domain.repositories import IProductRepository
+from ..domain.entities import Product
+from .dtos import ProductDTO
 from typing import List, Dict
 
 class ProductService:
