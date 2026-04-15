@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List, Optional
-from .entities import Product, ChatMessage
+from src.domain.entities import Product, ChatMessage
 
 class IProductRepository(ABC):
     """
