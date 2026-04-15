@@ -1,9 +1,9 @@
 from typing import List, Optional
 from sqlalchemy.orm import Session
 
-from ..domain.repositories import IChatRepository
-from ..domain.entities import ChatMessage
-from ..infrastructure.db.models import ChatMemoryModel
+from src.domain.repositories import IChatRepository
+from src.domain.entities import ChatMessage
+from src.infrastructure.db.models import ChatMemoryModel
 
 
 class SQLChatRepository(IChatRepository):

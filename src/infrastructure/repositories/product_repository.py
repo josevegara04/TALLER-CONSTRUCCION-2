@@ -1,9 +1,9 @@
 from typing import List, Optional
 from sqlalchemy.orm import Session
 
-from ..domain.repositories import IProductRepository
-from ..domain.entities import Product
-from ..infrastructure.db.models import ProductModel
+from src.domain.repositories import IProductRepository
+from src.domain.entities import Product
+from src.infrastructure.db.models import ProductModel
 
 
 class SQLProductRepository(IProductRepository):
