@@ -2,7 +2,7 @@ import os
 import google.generativeai as genai
 from typing import List
 
-from ..domain.entities import Product
+from src.domain.entities import Product
 
 class GeminiService:
     """
