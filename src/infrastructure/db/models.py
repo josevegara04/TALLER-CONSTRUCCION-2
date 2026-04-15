@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Float, Text, DateTime, Index
 from datetime import datetime
 
-from .database import Base
+from src.infrastructure.db.database import Base
 
 
 class ProductModel(Base):
