@@ -33,5 +33,12 @@ def init_db():
     Inicializa la base de datos
     """
     from src.infrastructure.db import models
+    from src.infrastructure.db.init_data import load_initial_data
 
     Base.metadata.create_all(bind=engine)
+    
+    db = SessionLocal()
+    try:
+        load_initial_data(db)
+    finally:
+        db.close()
