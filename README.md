@@ -21,39 +21,19 @@ API REST de e-commerce de zapatos con chat inteligente usando Clean Architecture
 ### Pasos
 
 1. Clonar repositorio
-\`\`\`bash
-git clone <tu-repo>
-cd e-commerce-chat-ai
-\`\`\`
+```bash
+git clone https://github.com/josevegara04/TALLER-CONSTRUCCION-2.git
+cd taller-construccion-2
+```
 
-2. Crear entorno virtual
-\`\`\`bash
-python -m venv venv
-source venv/bin/activate  # Mac/Linux
-# venv\Scripts\activate  # Windows
-\`\`\`
-
-3. Instalar dependencias
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
-
-4. Configurar variables de entorno
-\`\`\`bash
-cp .env.example .env
-# Editar .env y agregar tu GEMINI_API_KEY
-\`\`\`
-
-5. Ejecutar con Docker
-\`\`\`bash
+2. Ejecutar con Docker
+```bash
 docker-compose up --build
-\`\`\`
+```
 
 ## Uso
 
-- API: http://localhost:8000
-- Documentación: http://localhost:8000/docs
-- Redoc: http://localhost:8000/redoc
+- API y endpoints: http://localhost:8000
 
 ## Endpoints
 
@@ -61,12 +41,13 @@ docker-compose up --build
 - GET /products/{id} - Obtiene un producto
 - POST /chat - Envía mensaje al chat
 - GET /chat/history/{session_id} - Obtiene historial
+- GET /health
 
 ## Tests
 
-\`\`\`bash
+```bash
 pytest
-\`\`\`
+```
 
 ## Autor
-[Tu Nombre] - Universidad EAFIT
+[José Benjamín Vega Ramírez] - Universidad EAFIT
